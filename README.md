@@ -4,10 +4,11 @@ This repository gives the codes for multicomponent wavefield simulation using Ph
 
 # Overview
 
-We propose to use the Fourier feature physics Informed Neural Network (PINN) to solve for multifrequency multisource scattered wavefields for the Helmholtz equation. The proposed method breaks the limitation of the numerical solver in single-frequency wavefield simulation. The structure of the Fourier feature PINN is shown below.
-![FFPINN-en](https://github.com/songc0a/Fourier-feature-PINN-based-multifrequency-multisource-Helmholtz-solver/assets/31889731/35539da5-41c8-4fa5-bfb0-23fd066a3cfc)
-
-For the velocity in (a), the scattered wavefields (5-10 Hz) from the finite difference are shown in (b), and the scattered wavefields (5-10 Hz) from the  Fourier feature PINN are shown in (c).
+We propose to use physics Informed Neural Network (PINN) to solve for multicomponent scattered wavefields for the Helmholtz equation. 
+![du](https://github.com/songc0a/Multicomponent-wavefield-simulation-using-PINN/assets/31889731/7167b40c-1206-48cc-9139-3ed843b77d20)
+The real part of scattered wavefields of the horizontal displacement obtained from (a) the finite-difference method, (b) from PINN. (c) Scattered wavefield difference between figures a and b.
+![dv](https://github.com/songc0a/Multicomponent-wavefield-simulation-using-PINN/assets/31889731/58e15262-d3ea-48d2-b4e3-e12da122c040)
+The real part of scattered wavefields of the vertical displacement obtained from (a) the finite-difference method, (b) from PINN. (c) Scattered wavefield difference between figures a and b.
 
 # Installation of Tensorflow1
 
