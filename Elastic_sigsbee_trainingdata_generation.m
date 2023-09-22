@@ -3,19 +3,9 @@ close all
 
 load('bluewhitered.mat')
 
-str2 =['vpt'];
-filename2=['' str2 '.rsf@'];
-fid2=fopen(filename2,'rb');
-vel=fread(fid2,[143,465],'float');
-fclose(fid2);
-
-vp=vel(1:1:101,1:1:101)/1000 ;
-vs = vp/sqrt(3);
-
-n  = size(vp); N = n(1)*n(2);
-
-vp = imgaussfilt(vp,1);
-vs = imgaussfilt(vs,1);
+load('vp.mat')
+load('vs.mat')
+n = size(vp);
 
 dx = 0.025; dz = 0.025;
 h  = [dz dx];
@@ -145,8 +135,8 @@ x1 = xx(:); x_star = (repmat(x1,ns,1));
 z1 = zz(:); z_star = (repmat(z1,ns,1));
 sx_star = sx(:);
 
-save Elastic_sigsbee_4Hz_sx_F10.mat x_star z_star sx_star ...
-    x_train sx_train z_train  ...
-    alpha_train alpha0_train beta_train beta0_train ...
-    dzzu0_train dxxu0_train dxzu0_train dzzv0_train dxxv0_train dxzv0_train 
+% save Elastic_sigsbee_4Hz_sx_F10.mat x_star z_star sx_star ...
+%     x_train sx_train z_train  ...
+%     alpha_train alpha0_train beta_train beta0_train ...
+%     dzzu0_train dxxu0_train dxzu0_train dzzv0_train dxxv0_train dxzv0_train 
 
