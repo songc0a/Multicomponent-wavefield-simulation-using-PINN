@@ -8,7 +8,6 @@ We propose to use the Fourier feature physics Informed Neural Network (PINN) to 
 ![FFPINN-en](https://github.com/songc0a/Fourier-feature-PINN-based-multifrequency-multisource-Helmholtz-solver/assets/31889731/35539da5-41c8-4fa5-bfb0-23fd066a3cfc)
 
 For the velocity in (a), the scattered wavefields (5-10 Hz) from the finite difference are shown in (b), and the scattered wavefields (5-10 Hz) from the  Fourier feature PINN are shown in (c).
-![FFPINN](https://github.com/songc0a/Fourier-feature-PINN-based-multifrequency-multisource-Helmholtz-solver/assets/31889731/893e2f4b-58f1-4f5d-a4e9-6bfeba45e52a)
 
 # Installation of Tensorflow1
 
@@ -18,9 +17,8 @@ GPU usage: pip install --pre "tensorflow-gpu==1.15.*"
 
 # Code explanation
 
-helm_solver_ffpinn_4D.py: Tensorflow code for solving the multifrequency-multisource scattered wavefields using Fourier feature PINN  
-helm_solver_ffpinn_4D_test.py: Tensorflow code for a new velocity using the saved model
-Sigsbee_sourceinput_data_generation_fre.m: Matlab code for generating training and test data  
+helm_pinn_elastic_sx.py: Tensorflow code for solving the multicomponent scattered wavefields using PINN  
+Elastic_sigsbee_trainingdata_generation.m: Matlab code for generating training and test data  
 
 # Citation information
 
