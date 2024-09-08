@@ -28,11 +28,17 @@ If you find our codes and publications helpful, please kindly cite the following
 
 @article{song2023simulating,
   title={Simulating Multicomponent Elastic Seismic Wavefield Using Deep Learning},
+  
   author={Song, Chao and Liu, Yang and Zhao, Pengfei and Zhao, Tianshuo and Zou, Jingbo and Liu, Cai},
+  
   journal={IEEE Geoscience and Remote Sensing Letters},
+  
   volume={20},
+  
   pages={1--5},
+  
   year={2023},
+  
   publisher={IEEE}
 }
 
