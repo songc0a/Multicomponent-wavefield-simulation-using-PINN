@@ -19,6 +19,7 @@ GPU usage: pip install --pre "tensorflow-gpu==1.15.*"
 # Code explanation
 
 helm_pinn_elastic_sx.py: Tensorflow code for solving the multicomponent scattered wavefields using PINN  
+helm_pinn_elastic_sx_inversion.ipynb: Solving the multicomponent scattered wavefields and predicting corresponding P- and S-wave velocities
 Elastic_sigsbee_trainingdata_generation.m: Matlab code for generating training and test data  
 
 # Citation information
